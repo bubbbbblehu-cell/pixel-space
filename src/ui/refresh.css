@@ -200,6 +200,7 @@ body:has(:is(.desk-settings,.about-dialog)[open]) .gamepad-actions,:is(.desk-set
 /* A single PDF entry in About; the existing biography and reading flow remain intact. */
 .about-dialog .cv-resume-pdf {display:inline-flex;align-items:center;justify-content:center;min-height:36px;padding:7px 12px;border:2px solid var(--cv-ink);background:var(--cv-paper);color:var(--cv-ink);font:12px/1.5 'Fusion Pixel',monospace;text-decoration:none;box-shadow:2px 2px #c5bdba;}
 .about-dialog .cv-resume-pdf:hover {background:#e6dcd3;}
+.about-dialog.cv-dialog {width:min(420px,calc(100vw - 24px));height:auto;}
 .about-dialog .cv-footer {gap:10px;flex-wrap:wrap;}
 
 /* Phone-only: scale the approved desktop hardware without squeezing its sides. */

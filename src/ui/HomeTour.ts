@@ -12,7 +12,7 @@ export class HomeTour {
  private step=0;private restore?:HTMLElement;private abort=new AbortController();
  private steps=[
   {target:'.handheld-screen',title:t('点一颗星球，打开作品'),copy:t('六颗星球对应六类作品。项目内上下滚动阅读，左右滑动或点击箭头切换项目。')},
-  {target:'.dog-home',title:t('关于我'),copy:t('戳戳小狗窝，可以查看我的个人介绍、工作经历与联系方式。')},
+  {target:'.dog-home',title:t('关于我'),copy:t('戳戳小狗窝，可以查看我的个人介绍。')},
   {target:'.exploration-summary',title:t('在这里查看探索进度'),copy:t('看完一颗星球的全部项目，即可收集印章。完成提醒关闭后，仍会留在刚才的阅读位置。')},
  ];
  constructor(){
