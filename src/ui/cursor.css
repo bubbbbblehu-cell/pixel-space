@@ -3,8 +3,8 @@
 .paw-cursor img {display:block;width:32px;height:32px;image-rendering:pixelated;transform:rotate(-8deg);transition:transform 120ms steps(2,end);filter:drop-shadow(0 2px 0 #30263a55);}
 .paw-cursor[data-interactive=true] img {transform:rotate(6deg);}
 @media(hover:hover) and (pointer:fine) {
- html,body,body *,body *::before,body *::after {cursor:url('/assets/ui/pixel-paw-cursor.svg') 8 4,auto!important;}
- a[href],button:not(:disabled),[role=button],summary,input[type=range] {cursor:url('/assets/ui/pixel-paw-cursor.svg') 8 4,pointer!important;}
+ html,body,body *,body *::before,body *::after {cursor:url('/assets/ui/cat-paw-cursor.svg') 8 4,auto!important;}
+ a[href],button:not(:disabled),[role=button],summary,input[type=range] {cursor:url('/assets/ui/cat-paw-cursor.svg') 8 4,pointer!important;}
  body[data-paw-cursor=on],body[data-paw-cursor=on] *,body[data-paw-cursor=on] *::before,body[data-paw-cursor=on] *::after {cursor:none!important;}
  input:not([type=range]):not([type=checkbox]):not([type=radio]),textarea,[contenteditable=true] {cursor:text!important;}
  :disabled,[aria-disabled=true] {cursor:not-allowed!important;}

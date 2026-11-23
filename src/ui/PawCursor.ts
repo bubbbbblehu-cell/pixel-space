@@ -3,7 +3,7 @@ export function mountPawCursor():()=>void {
  const fine=matchMedia('(hover:hover) and (pointer:fine)');
  const reduced=matchMedia('(prefers-reduced-motion:reduce)');
  const cursor=document.createElement('div');cursor.className='paw-cursor';cursor.setAttribute('aria-hidden','true');cursor.setAttribute('popover','manual');
- const image=document.createElement('img');image.src=`${import.meta.env.BASE_URL}assets/ui/pixel-paw-cursor.svg`;image.alt='';image.width=image.height=32;cursor.append(image);document.body.append(cursor);
+ const image=document.createElement('img');image.src=`${import.meta.env.BASE_URL}assets/ui/cat-paw-cursor.svg`;image.alt='';image.width=image.height=32;cursor.append(image);document.body.append(cursor);
  const abort=new AbortController();let visible=false,animation:Animation|undefined;
  const hide=()=>{visible=false;delete document.body.dataset.pawCursor;cursor.hidden=true;try{cursor.hidePopover();}catch{/* No popover support. */}};
  const raise=()=>{if(!visible)return;try{cursor.hidePopover();cursor.showPopover();}catch{const dialogs=document.querySelectorAll('dialog[open]');(dialogs[dialogs.length-1]??document.body).append(cursor);}};

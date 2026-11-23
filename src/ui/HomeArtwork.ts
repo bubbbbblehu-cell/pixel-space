@@ -22,7 +22,7 @@ export function mountHomeArtwork() {
   return {
     async loadFullSize(): Promise<void> {
       await Promise.allSettled(artwork.map(async asset => {
-        const url = `${import.meta.env.BASE_URL}assets/optimized/${asset.file}`;
+        const url = new URL(`${import.meta.env.BASE_URL}assets/optimized/${asset.file}`, document.baseURI).href;
         await loadImage(url);
         if (disposed) return;
         style.setProperty(asset.property, `url("${url}")`);
