@@ -7,7 +7,7 @@ export function mountAboutDialog(dialog: HTMLDialogElement): () => void {
   dialog.innerHTML = translateUI(`
     <header class="cv-header">
       <span class="cv-mark" aria-hidden="true"><i></i><i></i><i></i></span>
-      <div><span class="cv-eyebrow">DEMO PROFILE</span><h2 id="about-title">关于林星</h2></div>
+      <div><span class="cv-eyebrow">DEMO PROFILE</span><h2 id="about-title">关于 bubble</h2></div>
       <button type="button" class="cv-close" aria-label="关闭个人介绍">×</button>
     </header>
     <nav class="cv-chapters" aria-label="个人介绍章节">
@@ -18,9 +18,9 @@ export function mountAboutDialog(dialog: HTMLDialogElement): () => void {
       <section id="cv-personal" class="cv-page cv-personal" aria-label="个人资料" tabindex="-1">
         <div class="cv-introduction">
           <div class="cv-identity"><div><span class="cv-section-label">ABOUT ME</span>
-          <h3>林星<span>LIN XING</span></h3></div><img class="cv-portrait" src="${import.meta.env.BASE_URL}assets/optimized/display-portrait-open-ring-transparent-adfb62f334.webp" width="1254" height="1254" alt="宇航狗导览员" /></div>
+          <h3>bubble</h3></div><img class="cv-portrait" src="${import.meta.env.BASE_URL}assets/optimized/display-portrait-open-ring-transparent-adfb62f334.webp" width="1254" height="1254" alt="宇航狗导览员" /></div>
           <p class="cv-position">视觉设计 · 互动体验</p>
-          <p class="cv-summary">林星是 Pixel Space 的虚构设计师，围绕品牌、主视觉和网页互动创作概念案例。</p>
+          <p class="cv-summary">bubble 是 Pixel Space 的虚构设计师，围绕品牌、主视觉和网页互动创作概念案例。</p>
         </div>
       </section>
       <section id="cv-experience" class="cv-page cv-career" aria-label="示例经历" tabindex="-1">

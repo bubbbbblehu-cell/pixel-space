@@ -146,7 +146,7 @@ export class PortfolioExperience {
     this.welcome.className='pixel-dialog cv-dialog exploration-welcome';this.welcome.setAttribute('aria-labelledby','welcome-title');
     const header=dialogHeader(translateUI('欢迎来到我的创意星系'),'welcome-title','PIXEL SPACE',()=>this.finishWelcome());
     const image=document.createElement('img');image.src=`${import.meta.env.BASE_URL}assets/optimized/display-portrait-open-ring-transparent-adfb62f334.webp`;image.alt=translateUI('宇航狗导览员');
-    const intro=document.createElement('p');intro.textContent=translateUI('我是林星，专注游戏品牌视觉、KV 创意、交互体验与美术指导。');
+    const intro=document.createElement('p');intro.textContent=translateUI('我是 bubble，专注游戏品牌视觉、KV 创意、交互体验与美术指导。');
     const tip=document.createElement('p');tip.className='welcome-guide';tip.textContent=translateUI('点星球打开作品；项目内上下阅读，左右切换项目。看完一颗星球的全部项目，即可获得探索印章。');
     const start=this.button(translateUI('开始探索 →'),()=>this.finishWelcome());start.dataset.gamepadConfirm='';this.welcome.append(header,image,intro,tip,start);document.body.append(this.welcome);
     this.welcome.addEventListener('close',()=>this.welcomeClosed());
